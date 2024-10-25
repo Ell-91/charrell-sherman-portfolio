@@ -19,13 +19,26 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
-          <div>text</div>
-          {/* image */}
-          <div>image</div>
-        </div>
-        {/* icons */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
+          <div>
+            <div>Software Engineer</div>
+            <h1 className="h1">Hello, my name is Charrell Sherman</h1>
+            <p>
+              {" "}
+              Passion for education and a strong dedication to delivering
+              projects that make a societal impact. Skilled in modern web
+              technologies and frameworks with a focus on enhancing user-centric
+              mobile and web applications. Proven ability to improve code
+              quality, reduce technical debt, and effectively collaborate
+              cross-functionally with product owners, engineers, UX/UI and QA to
+              define, design, and new features.
+            </p>
+            {/* image */}
+            <div>image</div>
+          </div>
+          {/* icons */}
+          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+            <RiArrowDownSLine className="text-3xl text-primary" />
+          </div>
         </div>
       </div>
     </section>

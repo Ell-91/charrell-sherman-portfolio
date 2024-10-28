@@ -7,11 +7,13 @@ import {
   RiTeamFill,
   RiTodoFill,
   RiArrowDownSLine,
+  RiBriefcase2Fill,
 } from "react-icons/ri";
 
 // import DevImg from "./DevImg";
-// import Badge from "./Badge2";
 import Socials from "./Socials";
+import DevImg from "./DevImg";
+import Badge2 from "./Badge2";
 
 const Hero = () => {
   return (
@@ -54,7 +56,17 @@ const Hero = () => {
             />
           </div>
           {/* image */}
-          <div className="hidden xl:flex relative">image</div>
+          <div className="hidden xl:flex relative">
+            {/* badge */}
+            <Badge2
+              containerStyles="absolute top-[18%] -left-[7rem]"
+              icon={<RiBriefcase2Fill />}
+              endCountNum={2}
+              badgeText="Years Of Experience"
+            />
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <DevImg containerStyles="bg-hero_shape2_dark w-[510px] h-[462px] bg-no-repeat relative bg-bottom" />
+          </div>
           {/* icons */}
           <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
             <RiArrowDownSLine className="text-3xl text-primary" />

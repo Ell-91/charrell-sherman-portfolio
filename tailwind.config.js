@@ -7,6 +7,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1824px",
+      xl: "1400px",
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",
@@ -58,6 +68,11 @@ module.exports = {
         hero_shape: "url(/hero/hero-bg.png)",
         hero_shape2_light: "url(/hero/shape-2-light.svg)",
         hero_shape2_dark: "url(/hero/shape-2-dark.png)",
+        // maybe dont need
+        about_shape_light: "url(/dots-light.svg)",
+        about_shape_light_dark: "url(/dots-dark.svg)",
+        dots_light: "url(/dots-light.svg)",
+        dots_dark: "url(/dots-dark.svg)",
       },
       borderRadius: {
         lg: "var(--radius)",

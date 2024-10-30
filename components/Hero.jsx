@@ -39,14 +39,18 @@ const Hero = () => {
             {/* button */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
-                <Button className="gap-x-2">
-                  Contact Charrell
+                {/* ERROR */}
+                <Button className="gap-x-2 w-[162px] xl:w-auto">
+                  Contact me
                   <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
+              <Button
+                variant="secondary"
+                className="gap-x-2 w-[162px] xl:w-auto"
+              >
                 Download Resume
-                <Download size={18} />
+                <Download size={20} />
               </Button>
             </div>
             {/* socials */}

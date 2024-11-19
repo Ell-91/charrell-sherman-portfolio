@@ -1,31 +1,19 @@
 "use client";
 
-import {
-  RiYoutubeFill,
-  RiLinkedinFill,
-  RiGithubFill,
-  RiInstagramFill,
-} from "react-icons/ri";
+import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 
 import Link from "next/link";
 
 import React from "react";
+//Fix Linkes
 const icons = [
   {
-    path: "/",
-    name: <RiYoutubeFill />,
-  },
-  {
-    path: "/",
+    path: "https://www.linkedin.com/in/charrell-sherman/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/Ell-91?tab=repositories",
     name: <RiGithubFill />,
-  },
-  {
-    path: "/",
-    name: <RiInstagramFill />,
   },
 ];
 
@@ -34,7 +22,12 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link
+            href={icon.path}
+            key={index}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className={`${iconStyles}`}>{icon.name}</div>
           </Link>
         );

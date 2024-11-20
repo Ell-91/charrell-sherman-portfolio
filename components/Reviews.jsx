@@ -22,45 +22,42 @@ import {
 const reviewData = [
   {
     avatar: "/reviews/avatar-1.png",
-    name: "Richard Thompson",
-    job: "Chef",
+    name: "Technical Ownership",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "Every line of code is a chance to learn and innovate. I approach each project as a learning canvas, taking full ownership from concept to completion and seeing challenges as opportunities for technical growth",
   },
   {
     avatar: "/reviews/avatar-3.png",
-    name: "Richard Thompson",
-    job: "Chef",
+    name: "Code Quality & Craftsmanship",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      " I treat each codebase as a living ecosystem, prioritizing clean, well-structured code that is maintainable and documented. My approach isn't just about solving today's problems but creating flexible foundations that adapt to future challenges.",
   },
   {
     avatar: "/reviews/avatar-4.png",
-    name: "Evelyn Anderson",
-    job: "Heart Surgeon",
+    name: "Continuous Learning",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "My technical journey is an endless curiosity-driven expedition. Emerging technologies aren't just tools to me, they're invitations to learn, adapt, and continuously redefine what's possible in software development.",
   },
   {
     avatar: "/reviews/avatar-5.png",
-    name: "Rasheda Jacobs",
-    job: "Engineer",
+    name: "Impact- Driven",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "Dedicated to creating solutions that deliver meaningful value by deeply understanding user needs and measuring success through tangible outcomes. I  want to ensure that every project I undertake makes a lasting, positive difference.",
   },
   {
     avatar: "/reviews/avatar-6.png",
-    name: "Richard Thompson",
-    job: "Chef",
+    name: "User-Centric Approach",
     review:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "Beyond aesthetics and functionality, the heart of great software lies in delivering an exceptional user experience. I strive to create solutions that are intuitive, engaging, and centered around the needs of the people who use them.",
   },
 ];
 const Reviews = ({ project }) => {
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
+        <h2 className="section-title mb-12 text-center mx-auto">
+          Values and Work Philosophy
+        </h2>
         {/* sidebar */}
         <Swiper
           className="h-[350px]"
@@ -78,19 +75,10 @@ const Reviews = ({ project }) => {
               <SwiperSlide key={index}>
                 <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
                   <CardHeader className="p-0 mb-10">
-                    <div className="flex items-center gap-x-4">
-                      {/* image */}
-                      <Image
-                        src={person.avatar}
-                        width={70}
-                        height={70}
-                        alt=""
-                        priority
-                      />
+                    <div className="flex items-center justify-center gap-x-4">
                       {/* name */}
-                      <div className="flex flex-col">
+                      <div className="flex flex-col items-center">
                         <CardTitle>{person.name}</CardTitle>
-                        <p>{person.job}</p>
                       </div>
                     </div>
                   </CardHeader>

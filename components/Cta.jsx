@@ -7,10 +7,10 @@ const Cta = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="h2 max-w-xl text-center mb-8">
-            Prepare to turn your idead into reality? Im here to help
+            Ready to Add a Passionate Software Engineer to Your Team?
           </h2>
           <Link href="/contact">
-            <Button>Contact me</Button>
+            <Button>Let`s Connect</Button>
           </Link>
         </div>
       </div>

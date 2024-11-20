@@ -10,21 +10,21 @@ import {
 const serviceData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Web Design",
+    title: "Fullstack Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "I enjoy the versatility of full-stack development, enabling me to work on everything from front-end design to back-end logic and contribute to projects from concept to completion.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Design",
+    title: "Backend Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "I see backend development as a complex puzzle of performance and innovation. I'm drawn to it because it lets you build the invisible infrastructure that shapes the backbone of applications and provides smooth, high-quality user experiences",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Development",
+    title: "Mobile Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      " Mobile apps are the digital pulse of modern life. It’s more than just code-it's a gateway to solving real-world challenges.  My passion lies in creating apps that intuitively connect users with powerful digital experiences across iOS and Android platforms",
   },
 ];
 const Services = () => {
@@ -32,7 +32,7 @@ const Services = () => {
     <section className="mb-12 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
-          My Services
+          Areas of Interest
         </h2>
         {/* grid items */}
         <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">

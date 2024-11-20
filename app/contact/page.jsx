@@ -14,10 +14,10 @@ export const Contact = () => {
               <span className="w-[30px] h-[2px] bg-primary"></span>
               Say Hello
             </div>
-            <h1 className="h1 max-w-md mb-8">Lets Work Together</h1>
+            <h1 className="h1 max-w-md mb-8">Let`s Work Together</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Whether you have a role in mind or just want to explore
+              possibilities
             </p>
           </div>
           <div
@@ -40,12 +40,7 @@ export const Contact = () => {
             <div className="flex items-center gap-x-8">
               {/* address */}
               <HomeIcon size={18} className="text-primary" />
-              <div>sWashington DC</div>
-            </div>
-            <div className="flex items-center gap-x-8">
-              {/* phone */}
-              <PhoneCall size={18} className="text-primary" />
-              <div>WhatsApp Phone Number</div>
+              <div>Washington DC</div>
             </div>
           </div>
           <Form />

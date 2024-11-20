@@ -18,10 +18,10 @@ const Hero = () => {
         <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left text-4xl sm:text-5xl lg:text-7xl">
-            <span className="text-primary">Hi I`m </span>
+            <span className="text-primary">Hello, I`m Charrell </span>
 
             <TypeAnimation
-              sequence={["Fullstack Engineer", 1000, "Mobile Developer", 1000]}
+              sequence={["Software Engineer", 1000, "Mobile Developer", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

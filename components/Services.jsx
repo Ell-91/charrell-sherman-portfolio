@@ -10,7 +10,7 @@ import {
 const serviceData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Fullstack Development",
+    title: "Fullstack Web Development",
     description:
       "I enjoy the versatility of full-stack development, enabling me to work on everything from front-end design to back-end logic and contribute to projects from concept to completion.",
   },

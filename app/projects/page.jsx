@@ -6,83 +6,51 @@ import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
     image: "/work/3.png",
-    category: "react js",
-    name: "Blah Website",
+    category: "Django",
+    name: "DevSearch",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
+      "Built a platform for developers to collaborate on unfinished and ‘in-progress’ projects. Implemented an authentication system and RESTful API using Django libraries to manage both frontend and backend.",
+    github: "https://github.com/Ell-91/devSearch",
   },
   {
     image: "/work/4.png",
-    category: "next js",
-    name: "Hah Website",
+    category: "React",
+    name: "Finanseer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
+      "Created a full-stack web application and dashboard that provides advanced financial insights and predictive analytics, enabling stakeholders to monitor KPIs and make informed decisions.",
+    github: "https://github.com/Ell-91/FinanceDashboard",
   },
   {
     image: "/work/2.png",
-    category: "next js",
-    name: "Cacao Website",
+    category: "React Native",
+    name: "ChatApp",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
+      "Developed a full-stack mobile messaging application for iOS and Android, replicating core WhatsApp functionalities, with features like real-time messaging, secure authentication, and group chat.",
+    github: "https://github.com/Ell-91/ChatApp",
   },
   {
     image: "/work/1.png",
-    category: "next js",
-    name: "Charrell Website",
+    category: "Full Stack",
+    name: "Pen to Print",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "converting handwritten forms to digital text, improving document accessibility and usability for both doctors and patients.",
     link: "/",
     github: "/",
   },
   {
     image: "/work/3.png",
-    category: "next js",
-    name: "Events Website",
+    category: "React",
+    name: "My Portfolio Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
+      "Created my portfolio website to showcase my projects, qualifications, values, and philosophy, with a contact form for easy connection",
+    github: "https://github.com/Ell-91/charrell-sherman-portfolio",
   },
   {
     image: "/work/4.png",
-    category: "next js",
-    name: "Wrapper Website",
+    category: "Django",
+    name: "BandFinder",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "Lavish Website",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "fullstack",
-    name: "Nova Website",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Nintique Website",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    link: "/",
+      "BandFinder helps you create bands, find members, and book local talent, making it easy to connect musicians on one platform.",
     github: "/",
   },
 ];

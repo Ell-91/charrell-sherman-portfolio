@@ -29,10 +29,10 @@ const introSchema = new Schema({
     type: Boolean, // Store whether the animation repeats indefinitely
     default: true,
   },
-  devImagSrc: {
-    type: String, // URL or path to the image
-    required: true,
-  },
+  // devImagSrc: {
+  //   type: String, // URL or path to the image
+  //   required: true,
+  // },
   badgeCount: {
     type: Number,
     required: true,
@@ -42,10 +42,10 @@ const introSchema = new Schema({
 // about schema
 const aboutMeSchema = new Schema({
   personalInformation: {
-    devImagSrc: {
-      type: String,
-      required: true,
-    },
+    // devImagSrc: {
+    //   type: String,
+    //   required: true,
+    // },
     sectionTitle: {
       type: String,
       required: true,
@@ -119,19 +119,20 @@ const aboutMeSchema = new Schema({
 
 // project Schema
 const projectSchema = new Schema({
-  projectImage: {
+  image: {
     type: String,
     required: true, // Path to the project's image
   },
   category: {
     type: String,
     required: true, // Technology category (e.g., Django, React, etc.)
+    enum: ['Django', 'React', 'React Native', 'Full Stack']
   },
-  projectName: {
+  name: {
     type: String,
     required: true, // Project name
   },
-  projectDescription: {
+  description: {
     type: String,
     required: true, // Detailed description of the project
   },
@@ -150,33 +151,31 @@ const projectSchema = new Schema({
 // latest projects schema
 const latestProjectSchema = new Schema({
   subtitle: {
-    type: string,
-    required: true,
-  },
-  projects: {
-    type: [projectSchema],
-  },
+    type: String,
+    required: true, // Subtitle for the latest projects section
+  } 
 });
 
 // areas of interest schema
 const areasOfInterestSchema = new Schema({
-  services: [
-    {
-      icon: {
-        type: String, // Storing the icon name as a string
-        required: true,
-        enum: ["GanttChartSquare", "Blocks", "Gem"], // Limit to available icons
-      },
-      title: {
-        type: String,
-        required: true,
-      },
-      description: {
-        type: String,
-        required: true,
-      },
-    },
-  ],
+  icon: {
+    type: String,
+    required: true,
+    enum: ["GanttChartSquare", "Blocks", "Gem"], // Restrict to only allowed icon names
+    trim: true,
+  },
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 100,
+  },
+  description: {
+    type: String,
+    required: true,
+    trim: true,
+    maxLength: 500,
+  },
 });
 
 // values and work philosophy schema

@@ -40,7 +40,7 @@ const introSchema = new Schema({
 });
 
 // about schema
-const aboutMeSchema = new Schema({
+const aboutSchema = new Schema({
   personalInformation: {
     // devImagSrc: {
     //   type: String,
@@ -126,7 +126,7 @@ const projectSchema = new Schema({
   category: {
     type: String,
     required: true, // Technology category (e.g., Django, React, etc.)
-    enum: ['Django', 'React', 'React Native', 'Full Stack']
+    enum: ["Django", "React", "React Native", "Full Stack"],
   },
   name: {
     type: String,
@@ -150,10 +150,30 @@ const projectSchema = new Schema({
 
 // latest projects schema
 const latestProjectSchema = new Schema({
-  subtitle: {
+  image: {
     type: String,
-    required: true, // Subtitle for the latest projects section
-  } 
+    required: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  github: {
+    type: String,
+    required: true,
+  },
+  subtitle: {
+    type: String, // This is the text from the <p> tag in the React component
+    required: true,
+  },
 });
 
 // areas of interest schema
@@ -224,13 +244,11 @@ const footerSchema = new Schema({
   },
 });
 
-module.exports = {
-  Intro: mongoose.model("into", introSchema),
-  About: mongoose.model("about", aboutMeSchema),
-  Project: mongoose.model("project", projectSchema),
-  Projects: mongoose.model("projects", latestProjectSchema),
-  Interest: mongoose.model("interest", areasOfInterestSchema),
-  Value: mongoose.model("value", valuesPhilosophySchema),
-  Contact: mongoose.model("contact", contactSchema),
-  Footer: mongoose.model("footer", footerSchema),
-};
+export const Intro = mongoose.model("intros", introSchema);
+export const About = mongoose.model("abouts", aboutSchema);
+export const Project = mongoose.model("projects", projectSchema);
+export const Project_ = mongoose.model("project_s", latestProjectSchema);
+export const Interest = mongoose.model("interests", areasOfInterestSchema);
+export const Value = mongoose.model("values", valuesPhilosophySchema);
+export const Contact = mongoose.model("contacts", contactSchema);
+export const Footer = mongoose.model("footers", footerSchema);

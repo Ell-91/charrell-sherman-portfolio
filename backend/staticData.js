@@ -122,68 +122,72 @@ const project = [
   },
 ];
 
-const projects = [
-    {
-      image: "/work/3.png",
-      category: "Django",
-      name: "DevSearch",
-      description: "Built a platform for developers to collaborate on unfinished and 'in-progress' projects. Implemented an authentication system and RESTful API using Django libraries to manage both frontend and backend.",
-      github: "https://github.com/Ell-91/devSearch",
-    },
-    {
-      image: "/work/4.png",
-      category: "React",
-      name: "Finanseer",
-      description: "Created a full-stack web application and dashboard that provides advanced financial insights and predictive analytics, enabling stakeholders to monitor KPIs and make informed decisions.",
-      github: "https://github.com/Ell-91/FinanceDashboard",
-    },
-    {
-      image: "/work/2.png",
-      category: "React Native",
-      name: "ChatApp",
-      description: "Developed a full-stack mobile messaging application for iOS and Android, replicating core WhatsApp functionalities, with features like real-time messaging, secure authentication, and group chat.",
-      github: "https://github.com/Ell-91/ChatApp",
-    },
-    {
-      image: "/work/1.png",
-      category: "Full Stack",
-      name: "Pen to Print",
-      description: "Converting handwritten forms to digital text, improving document accessibility and usability for both doctors and patients.",
-      github: "/",
-    },
-    {
-      image: "/work/3.png",
-      category: "React",
-      name: "My Portfolio Website",
-      description: "Created my portfolio website to showcase my projects, qualifications, values, and philosophy, with a contact form for easy connection.",
-      github: "https://github.com/Ell-91/charrell-sherman-portfolio",
-    },
-    {
-      image: "/work/4.png",
-      category: "Django",
-      name: "BandFinder",
-      description: "BandFinder helps you create bands, find members, and book local talent, making it easy to connect musicians on one platform.",
-      github: "/",
-    },
-  ];
+const project_ = [
+  {
+    image: "/work/3.png",
+    category: "Django",
+    name: "DevSearch",
+    description: "Built a platform for developers to collaborate on unfinished and 'in-progress' projects. Implemented an authentication system and RESTful API using Django libraries to manage both frontend and backend.",
+    github: "https://github.com/Ell-91/devSearch"
+  },
+  {
+    image: "/work/4.png",
+    category: "React",
+    name: "Finanseer",
+    description: "Created a full-stack web application and dashboard that provides advanced financial insights and predictive analytics, enabling stakeholders to monitor KPIs and make informed decisions.",
+    github: "https://github.com/Ell-91/FinanceDashboard"
+  },
+  {
+    image: "/work/2.png",
+    category: "React Native",
+    name: "ChatApp",
+    description: "Developed a full-stack mobile messaging application for iOS and Android, replicating core WhatsApp functionalities, with features like real-time messaging, secure authentication, and group chat.",
+    github: "https://github.com/Ell-91/ChatApp"
+  },
+  {
+    image: "/work/1.png",
+    category: "Full Stack",
+    name: "Pen to Print",
+    description: "Converting handwritten forms to digital text, improving document accessibility and usability for both doctors and patients.",
+    github: "/"
+  },
+  {
+    image: "/work/3.png",
+    category: "React",
+    name: "My Portfolio Website",
+    description: "Created my portfolio website to showcase my projects, qualifications, values, and philosophy, with a contact form for easy connection.",
+    github: "https://github.com/Ell-91/charrell-sherman-portfolio"
+  },
+  {
+    image: "/work/4.png",
+    category: "Django",
+    name: "BandFinder",
+    description: "BandFinder helps you create bands, find members, and book local talent, making it easy to connect musicians on one platform.",
+    github: "/"
+  }
+];
+
 
 const interest = [
-    {
-      icon: "GanttChartSquare",
-      title: "Fullstack Web Development",
-      description: "I enjoy the versatility of full-stack development, enabling me to work on everything from front-end design to back-end logic and contribute to projects from concept to completion."
-    },
-    {
-      icon: "Blocks",
-      title: "Backend Development",
-      description: "I see backend development as a complex puzzle of performance and innovation. I'm drawn to it because it lets you build the invisible infrastructure that shapes the backbone of applications and provides smooth, high-quality user experiences"
-    },
-    {
-      icon: "Gem",
-      title: "Mobile Development",
-      description: "Mobile apps are the digital pulse of modern life. It's more than just code—it's a gateway to solving real-world challenges. My passion lies in creating apps that intuitively connect users with powerful digital experiences across iOS and Android platforms."
-    }
-  ];
+  {
+    icon: "GanttChartSquare",
+    title: "Fullstack Web Development",
+    description:
+      "I enjoy the versatility of full-stack development, enabling me to work on everything from front-end design to back-end logic and contribute to projects from concept to completion.",
+  },
+  {
+    icon: "Blocks",
+    title: "Backend Development",
+    description:
+      "I see backend development as a complex puzzle of performance and innovation. I'm drawn to it because it lets you build the invisible infrastructure that shapes the backbone of applications and provides smooth, high-quality user experiences",
+  },
+  {
+    icon: "Gem",
+    title: "Mobile Development",
+    description:
+      "Mobile apps are the digital pulse of modern life. It's more than just code—it's a gateway to solving real-world challenges. My passion lies in creating apps that intuitively connect users with powerful digital experiences across iOS and Android platforms.",
+  },
+];
 
 const value = [
   {

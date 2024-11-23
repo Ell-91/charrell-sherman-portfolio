@@ -2,6 +2,7 @@ import DevImg from "./DevImg";
 import Image from "next/image";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import React, { Fragment } from "react";
 import {
   User2,
   MailIcon,
@@ -74,13 +75,13 @@ const skillData = [
     title: "skills",
     data: [
       {
-        name: "Languages: JavaScript · TypeScript ·  HTML · CSS · Python · C++ ",
+        name: "Languages: JavaScript · TypeScript · HTML · CSS · Python · C++",
       },
       {
-        name: "Technologies and Frameworks  React · Node.js · Express.js · Redux · Git · Figma · Django݀݀݀݀݀݀݀݀݀݀݀݀݀݀݀݀݀݀ · PostgreSQL · MongoDB",
+        name: "Frameworks: React · Node.js · Express.js · Django · PostgreSQL · MongoDB",
       },
       {
-        name: "Other Skills:  Code Maintenance · Debugging & Research · Agile · Web Development · Unit Testing · Code Review",
+        name: "Technologies: Git · Azure · Figma · Postman · AWS ",
       },
     ],
   },
@@ -115,7 +116,8 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:h-[860px] pb-45 xl:py-24">
+    // "min-h-screen pb-12 xl:pb-24"
+    <section className="xl:h-[900px] pb-45 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
@@ -131,8 +133,8 @@ const About = () => {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
-                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
-                  Personal Info
+              <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                  Technical Skills
                 </TabsTrigger>
                 <TabsTrigger
                   className="w-[162px] xl:w-auto"
@@ -140,8 +142,8 @@ const About = () => {
                 >
                   Qualifications
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
-                  Technical Skills
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+                  Personal Info
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
@@ -181,12 +183,6 @@ const About = () => {
                         );
                       })}
                     </div>
-                    {/* languages */}
-                    {/* <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skills</div>
-                      <div className="border-b border-border"></div>
-                      <div>English Spanish Italian French</div>
-                    </div> */}
                   </div>
                 </TabsContent>
                 <TabsContent value="qualifications">
@@ -278,54 +274,90 @@ const About = () => {
                 {/* skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">What I Use Everyday</h3>
-                    <div className="mb-4">
+                    <h3 className="h3 mb-8">Professional Toolkit</h3>
+                    <div className="mb-10">
                       <h4 className="text-xl font-semibold mb-2">
                         Technical Skills
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* skill list */}
-                      <div>
+                      <div className="w-full space-y-4">
                         {getData(skillData, "skills").data.map(
-                          (item, index) => {
-                            const { name } = item;
-                            return (
-                              <div
-                                className="flex-none w-auto text-center xl:text-left mx-auto xl:mx-0"
-                                key={index}
-                              >
-                                <div className="font-medium">{name}</div>
+                          (item, index) => (
+                            <div
+                              key={index}
+                              className="flex items-center whitespace-nowrap"
+                            >
+                              <div className="w-32">
+                                {" "}
+                                {/* Fixed width for alignment */}
+                                {index === 0 && (
+                                  <span className="font-bold">Languages:</span>
+                                )}
+                                {index === 1 && (
+                                  <span className="font-bold">Frameworks:</span>
+                                )}
+                                {index === 2 && (
+                                  <span className="font-bold">
+                                    Technologies:
+                                  </span>
+                                )}
                               </div>
-                            );
-                          }
+                              <div className="flex items-center flex-wrap gap-2">
+                                {item.name
+                                  .split(":")[1]
+                                  .split("·")
+                                  .map((tech, techIndex, array) => (
+                                    <Fragment key={techIndex}>
+                                      <span>{tech.trim()}</span>
+                                      {techIndex < array.length - 1 && (
+                                        <span className="text-gray-400">·</span>
+                                      )}
+                                    </Fragment>
+                                  ))}
+                              </div>
+                            </div>
+                          )
                         )}
                       </div>
                     </div>
-                    {/* other skills */}
+                    {/* technical practices */}
                     <div className="mb-4">
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Other Skills
-                      </h4>
-                      <div className="border-b border-border mb-4"></div>
-                      {/* other skills list */}
-                      <div>
-                        {getData(skillData, "other skills").data.map(
-                          (item, index) => {
-                            const { name } = item;
-                            return (
+                      {/* technical practices list */}
+                      <div className="mb-10">
+                        <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                          Technical Practices
+                        </h4>
+                        <div className="border-b border-border mb-4"></div>
+                        <div className="w-full">
+                          {getData(skillData, "other skills").data.map(
+                            (item, index) => (
                               <div
-                                className="flex-none w-auto text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
+                                className="flex items-center whitespace-nowrap"
                               >
-                                <div className="font-medium">{name}</div>
+                                <div className="flex items-center flex-wrap gap-2">
+                                  {item.name
+                                    .split("·")
+                                    .map((skill, skillIndex, array) => (
+                                      <Fragment key={skillIndex}>
+                                        <span>{skill.trim()}</span>
+                                        {skillIndex < array.length - 1 && (
+                                          <span className="text-gray-400">
+                                            ·
+                                          </span>
+                                        )}
+                                      </Fragment>
+                                    ))}
+                                </div>
                               </div>
-                            );
-                          }
-                        )}
+                            )
+                          )}
+                        </div>
                       </div>
                     </div>
                     {/* tools */}
-                    <div>
+                    <div className="mb-4">
                       <h4 className="text-xl font-semibold mb-2 xl:text-left">
                         Tools
                       </h4>

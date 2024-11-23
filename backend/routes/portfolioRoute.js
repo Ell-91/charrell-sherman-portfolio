@@ -1,13 +1,13 @@
 import express from "express";
 import {
   Intro,
-  //   About,
-  //   Project,
-  //   Project_,
-  //   Interest,
-  //   Value,
-  //   Contact,
-  //   Footer,
+    About,
+    Project,
+    Project_,
+    Interest,
+    Value,
+    Contact,
+    Footer,
 } from "../models/portfolioModel.js";
 
 const router = express.Router();

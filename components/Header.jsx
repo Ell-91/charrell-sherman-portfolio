@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import ThemeToggler from "./ThemeToggler";
+// import ThemeToggler from "./ThemeToggler";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -42,7 +42,7 @@ const Header = () => {
               linkStyles="relative hover:text-primary transition-all"
               underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
             />
-            <ThemeToggler />
+            {/* <ThemeToggler /> */}
             {/* Mobile NavBar */}
             <div className="xl:hidden">
               <MobileNav />

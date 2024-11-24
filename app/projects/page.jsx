@@ -9,7 +9,7 @@ const projectData = [
     category: "Django",
     name: "DevSearch",
     description:
-      "Built a platform for developers to collaborate on unfinished and ‘in-progress’ projects. Implemented an authentication system and RESTful API using Django libraries to manage both frontend and backend.",
+      "Developer collaboration platform connecting developers with unfinished or in-progress projects. Built an authentication system and RESTful API using Django to manage frontend and backend.",
     github: "https://github.com/Ell-91/devSearch",
   },
   {
@@ -75,7 +75,7 @@ const Projects = () => {
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          My Project
+          My Projects
         </h2>
         <Tabs defaultValue={category} className="m-24 xl:mb-48">
           <TabsList

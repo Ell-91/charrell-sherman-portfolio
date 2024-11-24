@@ -2,16 +2,16 @@
 
 ## Project Overview
 
-ChatApp is a full-stack mobile messaging application developed to practice and demonstrate mobile app development skills using React Native and AWS cloud services. This project aims to replicate core WhatsApp functionalities while serving as a comprehensive learning exercise in modern mobile app development.
+My portfolio website was designed to showcase my technical expertise while practicing and demonstrating modern web development skills. Built using the MERN stack (MongoDB Express.js React Node.js)along with Next.js and Tailwind, this project highlighs responsive design, efficient development practices, and seamless user experiences. It also serves as a platform to explore integration and deployment strategies for a fully functional and professional online presence.
 
 ## Motivation
 
 ### The primary goals of this project were to:
 
-- Reinforce React Native development concepts
-- Practice building cross-platform mobile applications
-- Gain hands-on experience with AWS cloud services
-- Develop a deep understanding of real-time messaging architecture
+- Practicing Backend Development
+- Enhancing Full-Stack Development Skills
+- Exploring Deployment Strategies
+- Showcasing Technical Expertise
 
 ## Tech Stack
 
@@ -29,20 +29,24 @@ ChatApp is a full-stack mobile messaging application developed to practice and d
 
 ## Key Features
 
-### Secure User Authentication
-
-- Login and Registration
-- User profile management
-
-### Real-time Messaging
-
-- Create, edit, and delete messages
-- Last seen status
-- Direct messaging
+- Responsive Design
+- Dynamic Frontend
+- Custom Styling with Tailwind CSS
+- Interactive Contact Form
 
 ## Screenshots
 
-<img src="./assets/images/chatPhotos.png">
+Landing Page
+<img src="./public/ui_photos/Landing.png">
+
+About
+<img src="./public/ui_photos/About.png">
+
+Interests
+<img src="./public/ui_photos/Interests.png">
+
+Values
+<img src="./public/ui_photos/Values.png">
 
 ## Learning Outcomes
 
@@ -54,47 +58,13 @@ ChatApp is a full-stack mobile messaging application developed to practice and d
 
 ## Credit
 
-Inspired by and developed following the tutorial by notJust.dev
+Inspired by Cristian Mihai tutorial
 
 ## Future Improvements
 
-- End-to-end encryption
-- Group chat functionality
-- Voice/Video call integration
-- Advanced user profile customization
-
-A MERN (MongoDB, Express.js, React, Node.js) finance application featuring an interactive dashboard for tracking financial KPIs (Key Performance Indicators) and analytics. It includes interactive charts, product and order management, and revenue predictions powered by regression. Finaceer helps stakeholders make informed decisions with advanced data visualizations and forecasting.
-
-#### Backend
-
-- Mongoose - database
-- Node.js - runtime
-- Express.js - backend framework
-- Regression-js predictions for the model
-- Lucidchart data modeling
-
-### Website Features
-
-- Interactive Dashboard
-- Advanced Data Visualizations
-- Revenue Predictions
-- Real-Time API Data
-- Deployment and Scalability
-- Product and Order Management
-
-# Dashboard Landing Page
-
-<img src="./resources/images/Dashboard.png">
-
-# Revenue Projections Page
-
-<img src="./resources/images/Predictions.png">
-
-### Credit
-
-Credit to EdRoh tutorial https://www.youtube.com/watch?v=uoJ0Tv-BFcQ&t=5099s
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- Enhanced Interactivity
+- Dark Mode
+- Web Accessibile
 
 ## Getting Started
 

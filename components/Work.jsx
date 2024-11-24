@@ -21,7 +21,7 @@ const projectData = [
     category: "Django",
     name: "DevSearch",
     description:
-      "Built a platform for developers to collaborate on unfinished and ‘in-progress’ projects. Implemented an authentication system and RESTful API using Django libraries to manage both frontend and backend.",
+      "Developer collaboration platform connecting developers with unfinished or in-progress projects. Built an authentication system and RESTful API using Django to manage frontend and backend.",
     github: "https://github.com/Ell-91/devSearch",
   },
   {
@@ -68,7 +68,7 @@ const projectData = [
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
+    <section className="relative pb-40 xl:pb-60">
       <div className="container mx-auto">
         {/* text */}
         <div
@@ -85,10 +85,10 @@ const Work = () => {
             <Button>All projects</Button>
           </Link>
         </div>
-        {/* sidebar */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 ">
+        {/* slider container */}
+        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px]"
+            className="h-[580px] px-2 pb-20"
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -97,16 +97,23 @@ const Work = () => {
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+              el: ".swiper-pagination",
+              type: "bullets",
+              bulletActiveClass: "swiper-pagination-bullet-active",
+              bulletClass: "swiper-pagination-bullet",
+            }}
           >
             {/* show only the first 4 projects for the slide  */}
             {projectData.slice(0, 4).map((project, index) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="py-4">
                   <ProjectCard project={project} />
                 </SwiperSlide>
               );
             })}
+            <div className="swiper-pagination mt-8"></div>
           </Swiper>
         </div>
       </div>

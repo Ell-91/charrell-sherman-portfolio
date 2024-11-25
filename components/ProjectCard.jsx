@@ -12,8 +12,8 @@ const ProjectCard = ({ project }) => {
           <Image
             className="absolute bottom-0 shadow-2xl"
             src={project.image}
-            width={247}
-            height={250}
+            width={475}
+            height={475}
             alt={project.name}
             priority
           />

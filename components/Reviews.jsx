@@ -30,7 +30,7 @@ const reviewData = [
     avatar: "/reviews/avatar-3.png",
     name: "Code Quality & Craftsmanship",
     review:
-      " I treat each codebase as a living ecosystem, prioritizing clean, well-structured code that is maintainable and documented. My approach isn't just about solving today's problems but creating flexible foundations that adapt to future challenges.",
+      " I prioritize clean well-structured code that is maintainable and documented. My approach isn't just about solving today's problems but creating flexible foundations that adapt to future challenges.",
   },
   {
     avatar: "/reviews/avatar-4.png",
@@ -60,7 +60,7 @@ const Reviews = ({ project }) => {
         </h2>
         {/* sidebar */}
         <Swiper
-          className="h-[350px]"
+          className="h-[400px]"
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 2 },
@@ -73,8 +73,8 @@ const Reviews = ({ project }) => {
           {reviewData.map((person, index) => {
             return (
               <SwiperSlide key={index}>
-                <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px] cursor-pointer transition-all duration-300 hover:shadow-lg ">
-                  <CardHeader className="p-0 mb-10">
+                <Card className="bg-tertiary dark:bg-secondary/40 p-8 h-[350px] flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="p-0 mb-6">
                     <div className="flex items-center justify-center gap-x-4">
                       {/* name */}
                       <div className="flex flex-col items-center">
@@ -82,7 +82,7 @@ const Reviews = ({ project }) => {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardDescription className="text-lg text-muted-foreground">
+                  <CardDescription className="text-lg text-muted-foreground flex-1 overflow-y-auto">
                     {person.review}
                   </CardDescription>
                 </Card>

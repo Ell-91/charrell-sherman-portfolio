@@ -83,7 +83,7 @@ const project = [
   {
     image: "/work/4.png",
     category: "React",
-    name: "Finanseer",
+    name: "Financier",
     description:
       "Created a full-stack web application and dashboard that provides advanced financial insights and predictive analytics, enabling stakeholders to monitor KPIs and make informed decisions.",
     github: "https://github.com/Ell-91/FinanceDashboard",
@@ -134,7 +134,7 @@ const project_ = [
   {
     image: "/work/4.png",
     category: "React",
-    name: "Finanseer",
+    name: "Financier",
     description:
       "Created a full-stack web application and dashboard that provides advanced financial insights and predictive analytics, enabling stakeholders to monitor KPIs and make informed decisions.",
     github: "https://github.com/Ell-91/FinanceDashboard",
@@ -205,7 +205,7 @@ const value = [
     avatar: "/reviews/avatar-3.png",
     name: "Code Quality & Craftsmanship",
     review:
-      "I treat each codebase as a living ecosystem, prioritizing clean, well-structured code that is maintainable and documented. My approach isn't just about solving today's problems but creating flexible foundations that adapt to future challenges.",
+      "I prioritizr clean well-structured code that is maintainable and documented. My approach isn't just about solving today's problems but creating flexible foundations that adapt to future challenges.",
   },
   {
     avatar: "/reviews/avatar-4.png",

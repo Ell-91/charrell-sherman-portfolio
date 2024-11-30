@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-My portfolio website was designed to showcase my technical expertise while practicing and demonstrating modern web development skills. Built using the MERN stack (MongoDB Express.js React Node.js)along with Next.js and Tailwind, this project highlighs responsive design, efficient development practices, and seamless user experiences. It also serves as a platform to explore integration and deployment strategies for a fully functional and professional online presence.
+My portfolio website was designed to showcase my technical expertise while practicing and demonstrating modern web development skills. Built using the MERN stack (MongoDB Express.js React Node.js) along with Next.js and Tailwind, this project highlighs responsive design, efficient development practices, and seamless user experiences. It also serves as a platform to explore integration and deployment strategies for a fully functional and professional online presence.
 
 ## Motivation
 

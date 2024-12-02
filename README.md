@@ -57,6 +57,12 @@ Values
 Contact me
 <img src="./public/ui_photos/Contact.png">
 
+## Learning Outcomes
+- Responsive Web Design
+- State Management Techniques
+- Customization and Styling with Flexbox
+- Deployment Strategies
+
 ## Credit
 
 Inspired by [Cristian Mihai](https://www.youtube.com/watch?v=Rew98iFupBM) tutorial

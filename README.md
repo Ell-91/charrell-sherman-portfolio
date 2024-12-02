@@ -57,14 +57,6 @@ Values
 Contact me
 <img src="./public/ui_photos/Contact.png">
 
-## Learning Outcomes
-
-- Mobile app development with React Native
-- Implementing real-time features
-- Cloud-based backend integration
-- GraphQL API design
-- Mobile UI/UX design principles
-
 ## Credit
 
 Inspired by [Cristian Mihai](https://www.youtube.com/watch?v=Rew98iFupBM) tutorial
@@ -74,3 +66,4 @@ Inspired by [Cristian Mihai](https://www.youtube.com/watch?v=Rew98iFupBM) tutori
 - Enhanced Interactivity
 - Dark Mode
 - Web Accessibile
+- Unit testing with Jest framework

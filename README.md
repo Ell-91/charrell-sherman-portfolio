@@ -1,8 +1,8 @@
-# Charrell's Portfolio Website
+# [Charrell's Portfolio Website](https://charrellsherman.vercel.app/)
 
 ## Project Overview
 
-My portfolio website was designed to showcase my technical expertise while practicing and demonstrating modern web development skills. Built using the MERN stack (MongoDB Express.js React Node.js)along with Next.js and Tailwind, this project highlighs responsive design, efficient development practices, and seamless user experiences. It also serves as a platform to explore integration and deployment strategies for a fully functional and professional online presence.
+My portfolio website was designed to showcase my technical expertise while practicing and demonstrating modern web development skills. Built using the MERN stack (MongoDB Express.js React Node.js) along with Next.js and Tailwind, this project highlighs responsive design, efficient development practices, and seamless user experiences. It also serves as a platform to explore integration and deployment strategies for a fully functional and professional online presence.
 
 ## Motivation
 
@@ -58,12 +58,10 @@ Contact me
 <img src="./public/ui_photos/Contact.png">
 
 ## Learning Outcomes
-
-- Mobile app development with React Native
-- Implementing real-time features
-- Cloud-based backend integration
-- GraphQL API design
-- Mobile UI/UX design principles
+- Responsive Web Design
+- State Management Techniques
+- Customization and Styling with Flexbox
+- Deployment Strategies
 
 ## Credit
 
@@ -74,3 +72,4 @@ Inspired by [Cristian Mihai](https://www.youtube.com/watch?v=Rew98iFupBM) tutori
 - Enhanced Interactivity
 - Dark Mode
 - Web Accessibile
+- Unit testing with Jest framework

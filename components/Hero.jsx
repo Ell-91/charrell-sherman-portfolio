@@ -44,9 +44,9 @@ const Hero = () => {
             <span className="text-primary">Hello, I`m Charrell </span>
 
             <TypeAnimation
-              sequence={["Software Engineer", 1000, "Mobile Developer", 1000]}
+              sequence={["Software Engineer", 800, "Mobile Developer", 800]}
               wrapper="span"
-              speed={50}
+              speed={70}
               repeat={Infinity}
               className="font-extrabold text-[#32334c] mb-4"
             />
@@ -92,6 +92,7 @@ const Hero = () => {
               icon={<RiBriefcase2Fill />}
               endCountNum={2}
               badgeText="Years Of Experience"
+              animated={false}
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg containerStyles="bg-hero_shape2_dark w-[510px] h-[462px] bg-no-repeat relative bg-bottom" />

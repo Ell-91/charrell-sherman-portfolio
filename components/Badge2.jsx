@@ -7,13 +7,18 @@ const Badge2 = ({
   endCountNum,
   endCountText,
   badgeText,
+  animated = true,
 }) => {
   return (
     <div className={`badge ${containerStyles}`}>
       <div className="text-3xl text-primary">{icon}</div>
       <div className="flex items-center gap-x-2">
         <div className="text-4xl leading-none font-bod text-primary">
-          <CountUp end={endCountNum} delay={1} duration={4} />
+          {animated ? (
+            <CountUp end={endCountNum} delay={1} duration={4} />
+          ) : (
+            endCountNum // Static value if animation is disabled
+          )}
           {endCountText}
         </div>
         <div className="max-w-[70px] leading-none text-[15px] font-medium text-black">
